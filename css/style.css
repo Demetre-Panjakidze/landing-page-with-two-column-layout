@@ -77,9 +77,9 @@ header .header-container nav {
 }
 header .header-container nav a {
   text-decoration: none;
-  color: #07043b;
 }
 header .header-container nav a p {
+  color: #07043b;
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -181,7 +181,7 @@ main .section_1 .section_1-container .text-content form .input .email {
   letter-spacing: 0.4px;
 }
 main .section_1 .section_1-container .text-content form .input .email-validate {
-  color: #f00;
+  color: #F00;
 }
 main .section_1 .section_1-container .text-content form button {
   width: 304px;
@@ -192,7 +192,7 @@ main .section_1 .section_1-container .text-content form button {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #fff;
+  color: #FFF;
   line-height: 16px;
   cursor: pointer;
 }
@@ -350,7 +350,7 @@ main .section_2 .section_2-container .text-content .text-box {
   border-radius: 4px;
   padding: 18.7px 12.7px 18.7px 26px;
   margin: 40px 0 0;
-  background-color: #fff;
+  background-color: #FFF;
 }
 main .section_2 .section_2-container .text-content .text-box .img-1 {
   width: 13px;
@@ -495,7 +495,7 @@ main .section_3 .section_3-container .text-content-bottom h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #fff;
+  color: #FFF;
 }
 main .section_3 .section_3-container .text-content-bottom p {
   margin: 16px 0 0;
@@ -504,7 +504,7 @@ main .section_3 .section_3-container .text-content-bottom p {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  color: #fff;
+  color: #FFF;
 }
 main .section_3 .section_3-container form {
   display: flex;
@@ -533,7 +533,7 @@ main .section_3 .section_3-container form .input .email {
   line-height: 11px;
 }
 main .section_3 .section_3-container form .input .email-validate {
-  color: #f00;
+  color: #F00;
 }
 main .section_3 .section_3-container form button {
   width: 240px;
@@ -544,7 +544,7 @@ main .section_3 .section_3-container form button {
   font-family: "Raleway", sans-serif;
   font-size: 10px;
   font-weight: 700;
-  color: #fff;
+  color: #FFF;
   line-height: 11px;
   cursor: pointer;
 }
@@ -619,7 +619,7 @@ main .section_3 .section_3-container form button:hover {
 footer {
   padding: 65px 0 101px;
   background-color: #07043b;
-  color: #fff;
+  color: #FFF;
   font-family: "Open Sans", sans-serif;
 }
 footer .footer-container .logo {
@@ -665,7 +665,7 @@ footer .footer-container .search-content .box-2 a {
   cursor: auto;
 }
 footer .footer-container .search-content .box-2 a p {
-  color: #fff;
+  color: #FFF;
   margin: 0;
   display: inline-block;
   cursor: pointer;
@@ -684,7 +684,7 @@ footer .footer-container .search-content .box-3 a {
   cursor: auto;
 }
 footer .footer-container .search-content .box-3 a p {
-  color: #fff;
+  color: #FFF;
   margin: 0;
   display: inline-block;
   cursor: pointer;

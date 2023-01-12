@@ -1,4 +1,5 @@
-@import "./base/reset.scss";
+@import "./base/reset";
+@import "./abstracts/variables";
 
 header {
   padding: 24px 24px 0;
@@ -19,9 +20,9 @@ header {
 
       a {
         text-decoration: none;
-        color: #07043b;
 
         p {
+          color: $dark-blue;
           margin: 0;
           font-family: "Open Sans", sans-serif;
           font-size: 12px;
@@ -140,18 +141,18 @@ main {
               width: 100%;
               height: 40px;
               border-radius: 3.13px;
-              border: 0.6px solid #07043b;
+              border: 0.6px solid $dark-blue;
               padding: 14px 0 12px 21px;
               font-family: "Raleway", sans-serif;
               font-size: 12px;
               font-weight: 400;
-              color: #c2c2c2;
+              color: $gray;
               line-height: 14px;
               letter-spacing: 0.4px;
             }
 
             .email-validate {
-              color: #f00;
+              color: $red;
             }
           }
 
@@ -159,18 +160,18 @@ main {
             width: 304px;
             height: 40px;
             border-radius: 3.13px;
-            background-color: #2f65f8;
+            background-color: $sky;
             border: 0;
             font-family: "Raleway", sans-serif;
             font-size: 14px;
             font-weight: 700;
-            color: #fff;
+            color: $white;
             line-height: 16px;
             cursor: pointer;
-          }
 
-          button:hover {
-            opacity: 0.6;
+            &:hover {
+              opacity: 0.6;
+            }
           }
         }
       }
@@ -284,7 +285,7 @@ main {
   //section_2-------------------------------------------------
   .section_2 {
     padding: 93px 27px 81px 20px;
-    background-color: #f8f8fe;
+    background-color: $near-white;
 
     .section_2-container {
       display: flex;
@@ -331,7 +332,7 @@ main {
             margin: 36px 0 0;
             padding: 0 0 6px;
             border: none;
-            border-bottom: 2px solid #3da08f;
+            border-bottom: 2px solid $green-like;
             background-color: inherit;
             display: flex;
             align-items: center;
@@ -342,15 +343,15 @@ main {
               font-family: "Open Sans", sans-serif;
               font-weight: 400;
               font-size: 12px;
-              color: #3da08f;
+              color: $green-like;
             }
           }
 
           button:is(:hover, :focus) {
-            border-bottom: 2px solid #71dfcc;
+            border-bottom: 2px solid $light-green;
 
             .btn_span {
-              color: #71dfcc;
+              color: $light-green;
             }
           }
         }
@@ -360,7 +361,7 @@ main {
           border-radius: 4px;
           padding: 18.7px 12.7px 18.7px 26px;
           margin: 40px 0 0;
-          background-color: #fff;
+          background-color: $white;
 
           .img-1 {
             width: 13px;
@@ -534,7 +535,7 @@ main {
 
   //section_3-------------------------------------------------
   .section_3 {
-    background-color: #575988;
+    background-color: $less-dark-blue;
     padding: 54px 48px 71px;
 
     .section_3-container {
@@ -555,7 +556,7 @@ main {
           font-size: 18px;
           font-weight: 700;
           line-height: 24px;
-          color: #fff;
+          color: $white;
         }
 
         p {
@@ -565,7 +566,7 @@ main {
           font-size: 14px;
           font-weight: 400;
           line-height: 21px;
-          color: #fff;
+          color: $white;
         }
       }
 
@@ -592,12 +593,12 @@ main {
             font-family: "Raleway", sans-serif;
             font-size: 10px;
             font-weight: 400;
-            color: #c2c2c2;
+            color: $gray;
             line-height: 11px;
           }
 
           .email-validate {
-            color: #f00;
+            color: $red;
           }
         }
 
@@ -605,12 +606,12 @@ main {
           width: 240px;
           height: 32px;
           border-radius: 1.47px;
-          background-color: #2f65f8;
+          background-color: $sky;
           border: 0;
           font-family: "Raleway", sans-serif;
           font-size: 10px;
           font-weight: 700;
-          color: #fff;
+          color: $white;
           line-height: 11px;
           cursor: pointer;
 
@@ -646,7 +647,7 @@ main {
               min-width: 480px;
             }
           }
-          
+
           button {
             width: 480px;
           }
@@ -714,8 +715,8 @@ main {
 //footer-------------------------------------
 footer {
   padding: 65px 0 101px;
-  background-color: #07043b;
-  color: #fff;
+  background-color: $dark-blue;
+  color: $white;
   font-family: "Open Sans", sans-serif;
 
   .footer-container {
@@ -771,14 +772,14 @@ footer {
           cursor: auto;
 
           p {
-            color: #fff;
+            color: $white;
             margin: 0;
             display: inline-block;
             cursor: pointer;
-          }
 
-          p:hover {
-            color: #6c9bff;
+            &:hover {
+              color: $less-sky;
+            }
           }
         }
       }
@@ -794,14 +795,14 @@ footer {
           cursor: auto;
 
           p {
-            color: #fff;
+            color: $white;
             margin: 0;
             display: inline-block;
             cursor: pointer;
-          }
 
-          p:hover {
-            color: #6c9bff;
+            &:hover {
+              color: $less-sky;
+            }
           }
         }
       }
@@ -815,7 +816,7 @@ footer {
         .social-1,
         .social-2,
         .social-3 {
-          border: 0.8px solid #dfe4f0;
+          border: 0.8px solid $middle-white;
           border-radius: 50%;
           width: 27px;
           height: 27px;
