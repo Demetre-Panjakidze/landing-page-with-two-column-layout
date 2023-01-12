@@ -59,6 +59,14 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 header {
   padding: 24px 24px 0;
 }
@@ -149,7 +157,7 @@ main .section_1 .section_1-container .text-content h1 {
 main .section_1 .section_1-container .text-content p {
   margin: 24px 0 0;
   max-width: 296px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   max-width: 296px;
   font-size: 14px;
   font-weight: 400;
