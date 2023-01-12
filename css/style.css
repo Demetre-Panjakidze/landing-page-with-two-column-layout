@@ -1,9 +1,7 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -17,8 +15,7 @@
 /*
   3. Allow percentage-based heights in the application
 */
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -36,11 +33,7 @@ body {
 /*
   6. Improve media defaults
 */
-img,
-picture,
-video,
-canvas,
-svg {
+img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
@@ -48,31 +41,21 @@ svg {
 /*
   7. Remove built-in form typography styles
 */
-input,
-button,
-textarea,
-select {
+input, button, textarea, select {
   font: inherit;
 }
 
 /*
   8. Avoid text overflows
 */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
 /*
   9. Create a root stacking context
 */
-#root,
-#__next {
+#root, #__next {
   isolation: isolate;
 }
 
@@ -106,7 +89,7 @@ header .header-container nav a {
 header .header-container nav a p {
   color: #07043b;
   margin: 0;
-  font-family: $font-family-1;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -166,7 +149,7 @@ main .section_1 .section_1-container .text-content {
 main .section_1 .section_1-container .text-content h1 {
   margin: 0;
   max-width: 320px;
-  font-family: $font-family-1;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
@@ -174,7 +157,7 @@ main .section_1 .section_1-container .text-content h1 {
 main .section_1 .section_1-container .text-content p {
   margin: 24px 0 0;
   max-width: 296px;
-  font-family: $font-family-2;
+  font-family: "Raleway", sans-serif;
   max-width: 296px;
   font-size: 14px;
   font-weight: 400;
@@ -198,7 +181,7 @@ main .section_1 .section_1-container .text-content form .input .email {
   border-radius: 3.13px;
   border: 0.6px solid #07043b;
   padding: 14px 0 12px 21px;
-  font-family: $font-family-2;
+  font-family: "Raleway", sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #c2c2c2;
@@ -206,7 +189,7 @@ main .section_1 .section_1-container .text-content form .input .email {
   letter-spacing: 0.4px;
 }
 main .section_1 .section_1-container .text-content form .input .email-validate {
-  color: #f00;
+  color: #F00;
 }
 main .section_1 .section_1-container .text-content form button {
   width: 304px;
@@ -214,10 +197,10 @@ main .section_1 .section_1-container .text-content form button {
   border-radius: 3.13px;
   background-color: #2f65f8;
   border: 0;
-  font-family: $font-family-2;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #fff;
+  color: #FFF;
   line-height: 16px;
   cursor: pointer;
 }
@@ -328,14 +311,14 @@ main .section_2 .section_2-container .text-content {
 }
 main .section_2 .section_2-container .text-content h2 {
   margin: 0;
-  font-family: $font-family-1;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 }
 main .section_2 .section_2-container .text-content p {
   margin: 24px 0 0;
-  font-family: $font-family-1;
+  font-family: "Open Sans", sans-serif;
   max-width: 325px;
   font-size: 14px;
   font-weight: 400;
@@ -359,7 +342,7 @@ main .section_2 .section_2-container .text-content a button {
   cursor: pointer;
 }
 main .section_2 .section_2-container .text-content a button span {
-  font-family: $font-family-1;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: #3da08f;
@@ -367,13 +350,7 @@ main .section_2 .section_2-container .text-content a button span {
 main .section_2 .section_2-container .text-content a button:is(:hover, :focus) {
   border-bottom: 2px solid #71dfcc;
 }
-main
-  .section_2
-  .section_2-container
-  .text-content
-  a
-  button:is(:hover, :focus)
-  .btn_span {
+main .section_2 .section_2-container .text-content a button:is(:hover, :focus) .btn_span {
   color: #71dfcc;
 }
 main .section_2 .section_2-container .text-content .text-box {
@@ -381,7 +358,7 @@ main .section_2 .section_2-container .text-content .text-box {
   border-radius: 4px;
   padding: 18.7px 12.7px 18.7px 26px;
   margin: 40px 0 0;
-  background-color: #fff;
+  background-color: #FFF;
 }
 main .section_2 .section_2-container .text-content .text-box .img-1 {
   width: 13px;
@@ -400,47 +377,26 @@ main .section_2 .section_2-container .text-content .text-box .info-about-user {
   gap: 8px;
   margin: 12px 0 0;
 }
-main
-  .section_2
-  .section_2-container
-  .text-content
-  .text-box
-  .info-about-user
-  .left
-  img {
+main .section_2 .section_2-container .text-content .text-box .info-about-user .left img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
 }
-main
-  .section_2
-  .section_2-container
-  .text-content
-  .text-box
-  .info-about-user
-  .right
-  h3 {
+main .section_2 .section_2-container .text-content .text-box .info-about-user .right h3 {
   font-weight: 700;
   font-size: 9px;
-  font-family: $font-family-1;
+  font-family: "Open Sans", sans-serif;
   line-height: 12.26px;
   letter-spacing: 0.45px;
   margin: 0;
   text-align: left;
 }
-main
-  .section_2
-  .section_2-container
-  .text-content
-  .text-box
-  .info-about-user
-  .right
-  p {
+main .section_2 .section_2-container .text-content .text-box .info-about-user .right p {
   font-weight: 400;
   font-size: 6px;
   line-height: 11.8px;
   letter-spacing: 0.3;
-  font-family: $font-family-1;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -471,45 +427,19 @@ main
     line-height: 23px;
     letter-spacing: 0.5;
   }
-  main
-    .section_2
-    .section_2-container
-    .text-content
-    .text-box
-    .info-about-user {
+  main .section_2 .section_2-container .text-content .text-box .info-about-user {
     margin: 16px 0 0;
   }
-  main
-    .section_2
-    .section_2-container
-    .text-content
-    .text-box
-    .info-about-user
-    .left
-    img {
+  main .section_2 .section_2-container .text-content .text-box .info-about-user .left img {
     width: 34px;
     height: 34px;
   }
-  main
-    .section_2
-    .section_2-container
-    .text-content
-    .text-box
-    .info-about-user
-    .right
-    h3 {
+  main .section_2 .section_2-container .text-content .text-box .info-about-user .right h3 {
     font-size: 11px;
     line-height: 15px;
     letter-spacing: 0.55px;
   }
-  main
-    .section_2
-    .section_2-container
-    .text-content
-    .text-box
-    .info-about-user
-    .right
-    p {
+  main .section_2 .section_2-container .text-content .text-box .info-about-user .right p {
     font-size: 8px;
     line-height: 15px;
     letter-spacing: 0.36px;
@@ -569,20 +499,20 @@ main .section_3 .section_3-container .text-content-bottom {
 main .section_3 .section_3-container .text-content-bottom h2 {
   margin: 0;
   max-width: 195px;
-  font-family: $font-family-2;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #fff;
+  color: #FFF;
 }
 main .section_3 .section_3-container .text-content-bottom p {
   margin: 16px 0 0;
   max-width: 280px;
-  font-family: $font-family-1;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  color: #fff;
+  color: #FFF;
 }
 main .section_3 .section_3-container form {
   display: flex;
@@ -604,14 +534,14 @@ main .section_3 .section_3-container form .input .email {
   border-radius: 1.47px;
   border: 0;
   padding: 11px 0 9px 8px;
-  font-family: $font-family-2;
+  font-family: "Raleway", sans-serif;
   font-size: 10px;
   font-weight: 400;
   color: #c2c2c2;
   line-height: 11px;
 }
 main .section_3 .section_3-container form .input .email-validate {
-  color: #f00;
+  color: #F00;
 }
 main .section_3 .section_3-container form button {
   width: 240px;
@@ -619,10 +549,10 @@ main .section_3 .section_3-container form button {
   border-radius: 1.47px;
   background-color: #2f65f8;
   border: 0;
-  font-family: $font-family-2;
+  font-family: "Raleway", sans-serif;
   font-size: 10px;
   font-weight: 700;
-  color: #fff;
+  color: #FFF;
   line-height: 11px;
   cursor: pointer;
 }
@@ -697,8 +627,8 @@ main .section_3 .section_3-container form button:hover {
 footer {
   padding: 65px 0 101px;
   background-color: #07043b;
-  color: #fff;
-  font-family: $font-family-1;
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
 }
 footer .footer-container .logo {
   margin: 0 0 0 39px;
@@ -743,7 +673,7 @@ footer .footer-container .search-content .box-2 a {
   cursor: auto;
 }
 footer .footer-container .search-content .box-2 a p {
-  color: #fff;
+  color: #FFF;
   margin: 0;
   display: inline-block;
   cursor: pointer;
@@ -762,7 +692,7 @@ footer .footer-container .search-content .box-3 a {
   cursor: auto;
 }
 footer .footer-container .search-content .box-3 a p {
-  color: #fff;
+  color: #FFF;
   margin: 0;
   display: inline-block;
   cursor: pointer;
