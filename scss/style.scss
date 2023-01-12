@@ -3,15 +3,17 @@
 @import "./base/typography";
 @import "./layout/footer";
 @import "./layout/header";
+@import "./abstracts/mixins";
+@import "./components/forms";
+@import "./components/buttons";
 
 main {
-  //section_1-----------------------------------------------------
+  // section 1
   .section_1 {
     padding: 98px 28px 90px;
 
     .section_1-container {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
       gap: 40px;
 
@@ -21,85 +23,50 @@ main {
       }
 
       .text-content {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        @include flex-column;
         align-items: center;
+        text-align: center;
 
         h1 {
+          font-family: "Open Sans", sans-serif;
+          @include fontStyles(24px, 700, 36px, 0px);
           margin: 0;
           max-width: 320px;
-          font-family: "Open Sans", sans-serif;
-          font-size: 24px;
-          font-weight: 700;
-          line-height: 36px;
         }
 
         p {
+          font-family: "Raleway", sans-serif;
+          @include fontStyles(14px, 400, 21px, 0px);
           margin: 24px 0 0;
           max-width: 296px;
-          font-family: "Raleway", sans-serif;
-          max-width: 296px;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 21px;
         }
 
         form {
-          display: flex;
-          flex-direction: column;
           gap: 16px;
           margin: 32px 0 0;
 
           .input {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            gap: 4px;
-
             .email {
-              width: 100%;
               height: 40px;
               border-radius: 3.13px;
               border: 0.6px solid $dark-blue;
-              padding: 14px 0 12px 21px;
-              font-family: "Raleway", sans-serif;
-              font-size: 12px;
-              font-weight: 400;
-              color: $gray;
               line-height: 14px;
               letter-spacing: 0.4px;
-              color: $dark-blue;
-            }
-
-            .email-validate {
-              color: $red;
             }
           }
 
           button {
+            @include fontStyles(14px, 700, 16px, 0px);
             width: 304px;
             height: 40px;
             border-radius: 3.13px;
-            background-color: $sky;
-            border: 0;
-            font-family: "Raleway", sans-serif;
-            font-size: 14px;
-            font-weight: 700;
-            color: $white;
-            line-height: 16px;
-            cursor: pointer;
-
-            &:hover {
-              opacity: 0.6;
-            }
           }
         }
       }
     }
   }
 
-  //media for section_1
+  //media for section 1
   @media (min-width: 768px) {
     .section_1 {
       padding: 92px 56px 90px;
@@ -203,7 +170,7 @@ main {
     }
   }
 
-  //section_2-------------------------------------------------
+  // section 2
   .section_2 {
     padding: 93px 27px 81px 20px;
     background-color: $near-white;
@@ -337,7 +304,7 @@ main {
     }
   }
 
-  //media for section_2
+  //media for section 2
   @media (min-width: 768px) {
     .section_2 {
       padding: 135px 53px 90px 50px;
@@ -454,7 +421,7 @@ main {
     }
   }
 
-  //section_3-------------------------------------------------
+  // section 3
   .section_3 {
     background-color: $less-dark-blue;
     padding: 54px 48px 71px;
@@ -492,59 +459,32 @@ main {
       }
 
       form {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         gap: 8px;
         margin: 24px 0 0;
 
         .input {
-          display: flex;
-          flex-direction: column;
-          text-align: left;
-          gap: 4px;
           width: 100%;
 
           .email {
-            width: 100%;
             height: 32px;
             border-radius: 1.47px;
             border: 0;
-            padding: 14px 0 12px 21px;
-            font-family: "Raleway", sans-serif;
-            font-size: 12px;
-            font-weight: 400;
             line-height: 11px;
-            color: $dark-blue;
-          }
-
-          .email-validate {
-            color: $red;
           }
         }
 
         button {
+          @include fontStyles(10px, 700, 11px, 0px);
           width: 240px;
           height: 32px;
           border-radius: 1.47px;
-          background-color: $sky;
-          border: 0;
-          font-family: "Raleway", sans-serif;
-          font-size: 10px;
-          font-weight: 700;
-          color: $white;
-          line-height: 11px;
-          cursor: pointer;
-
-          &:hover {
-            opacity: 0.6;
-          }
         }
       }
     }
   }
 
-  //media for section_3
+  //media for section 3
   @media (min-width: 768px) {
     .section_3 {
       .section_3-container {
@@ -632,4 +572,3 @@ main {
     }
   }
 }
-

@@ -1,0 +1,28 @@
+@import "../base/reset";
+@import "../abstracts/variables";
+@import "../base/typography";
+@import "../abstracts/mixins";
+@import "./buttons";
+
+.form {
+  @include flex-column;
+
+  .input {
+    @include flex-column;
+    text-align: left;
+    gap: 4px;
+
+    .email {
+      font-family: "Raleway", sans-serif;
+      width: 100%;
+      padding: 14px 0 12px 21px;
+      color: $dark-blue;
+      @include fontStyles(12px, 400, 11px, 0px);
+    }
+
+    .email-validate {
+      color: $red;
+      font-size: 12px;
+    }
+  }
+}
