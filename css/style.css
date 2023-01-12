@@ -562,11 +562,11 @@ main .section_3 .section_3-container form button:hover {
     line-height: 22.5px;
     max-width: 440px;
   }
-  main .section_3 .section_3-container form .email {
-    width: 440px;
+  main .section_3 .section_3-container form .input .email {
+    min-width: 480px;
   }
   main .section_3 .section_3-container form button {
-    width: 440px;
+    width: 480px;
   }
 }
 @media (min-width: 1440px) {
@@ -606,6 +606,7 @@ main .section_3 .section_3-container form button:hover {
     height: 48px;
     font-size: 12px;
     line-height: 14px;
+    padding: 16px 0 18px 22px;
   }
   main .section_3 .section_3-container form button {
     width: 200px;

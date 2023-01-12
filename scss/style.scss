@@ -532,6 +532,7 @@ main {
     }
   }
 
+  //section_3-------------------------------------------------
   .section_3 {
     background-color: #575988;
     padding: 54px 48px 71px;
@@ -612,10 +613,10 @@ main {
           color: #fff;
           line-height: 11px;
           cursor: pointer;
-        }
 
-        button:hover {
-          opacity: 0.6;
+          &:hover {
+            opacity: 0.6;
+          }
         }
       }
     }
@@ -640,12 +641,14 @@ main {
         }
 
         form {
-          .email {
-            width: 440px;
+          .input {
+            .email {
+              min-width: 480px;
+            }
           }
-
+          
           button {
-            width: 440px;
+            width: 480px;
           }
         }
       }
@@ -692,6 +695,7 @@ main {
               height: 48px;
               font-size: 12px;
               line-height: 14px;
+              padding: 16px 0 18px 22px;
             }
           }
 
