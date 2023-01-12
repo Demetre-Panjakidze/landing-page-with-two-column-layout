@@ -1,90 +1,9 @@
 @import "./base/reset";
 @import "./abstracts/variables";
 @import "./base/typography";
+@import "./layout/footer";
+@import "./layout/header";
 
-header {
-  padding: 24px 24px 0;
-
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    img {
-      width: 80px;
-      height: 24px;
-    }
-
-    nav {
-      display: flex;
-      gap: 24px;
-
-      a {
-        text-decoration: none;
-
-        p {
-          color: $dark-blue;
-          margin: 0;
-          font-family: "Open Sans", sans-serif;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 14px;
-        }
-      }
-    }
-  }
-}
-
-//media for header---------------------------------------
-@media (min-width: 768px) {
-  header {
-    padding: 45px 51px 0;
-
-    .header-container {
-      img {
-        width: 123px;
-        height: 40px;
-      }
-
-      nav {
-        gap: 36px;
-
-        a {
-          p {
-            font-size: 14px;
-            line-height: 16px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  header {
-    padding: 65px 80px 0;
-
-    .header-container {
-      img {
-        width: 166px;
-        height: 49px;
-      }
-
-      nav {
-        gap: 57px;
-
-        a {
-          p {
-            font-size: 16px;
-            line-height: 19px;
-          }
-        }
-      }
-    }
-  }
-}
-
-//main---------------------------------------------------
 main {
   //section_1-----------------------------------------------------
   .section_1 {
@@ -150,6 +69,7 @@ main {
               color: $gray;
               line-height: 14px;
               letter-spacing: 0.4px;
+              color: $dark-blue;
             }
 
             .email-validate {
@@ -590,12 +510,12 @@ main {
             height: 32px;
             border-radius: 1.47px;
             border: 0;
-            padding: 11px 0 9px 8px;
+            padding: 14px 0 12px 21px;
             font-family: "Raleway", sans-serif;
-            font-size: 10px;
+            font-size: 12px;
             font-weight: 400;
-            color: $gray;
             line-height: 11px;
+            color: $dark-blue;
           }
 
           .email-validate {
@@ -713,194 +633,3 @@ main {
   }
 }
 
-//footer-------------------------------------
-footer {
-  padding: 65px 0 101px;
-  background-color: $dark-blue;
-  color: $white;
-  font-family: "Open Sans", sans-serif;
-
-  .footer-container {
-    .logo {
-      margin: 0 0 0 39px;
-      width: 105px;
-      height: 30px;
-    }
-
-    .search-content {
-      margin: 32px 0 0;
-
-      .box-1 {
-        margin: 0 0 0 39px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-
-        .flex-1,
-        .flex-2 {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-
-          p {
-            margin: 0;
-          }
-        }
-
-        .flex-1 {
-          img {
-            width: 18px;
-            height: 18px;
-          }
-        }
-
-        .flex-2 {
-          img {
-            width: 20px;
-            height: 16px;
-          }
-        }
-      }
-
-      .box-2 {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        margin: 32px 0 0 39px;
-
-        a {
-          text-decoration: none;
-          cursor: auto;
-
-          p {
-            color: $white;
-            margin: 0;
-            display: inline-block;
-            cursor: pointer;
-
-            &:hover {
-              color: $less-sky;
-            }
-          }
-        }
-      }
-
-      .box-3 {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        margin: 32.5px 0 0 39px;
-
-        a {
-          text-decoration: none;
-          cursor: auto;
-
-          p {
-            color: $white;
-            margin: 0;
-            display: inline-block;
-            cursor: pointer;
-
-            &:hover {
-              color: $less-sky;
-            }
-          }
-        }
-      }
-
-      .box-4 {
-        display: flex;
-        justify-content: center;
-        gap: 10.82px;
-        margin: 32px 0 0;
-
-        .social-1,
-        .social-2,
-        .social-3 {
-          border: 0.8px solid $middle-white;
-          border-radius: 50%;
-          width: 27px;
-          height: 27px;
-        }
-
-        .social-1 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          img {
-            max-width: 12.73px;
-            max-height: 12.71px;
-          }
-        }
-
-        .social-2 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          img {
-            max-width: 12.73px;
-            max-height: 12.71px;
-          }
-        }
-
-        .social-3 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          img {
-            max-width: 12.73px;
-            max-height: 12.71px;
-          }
-        }
-
-        .social-1:hover,
-        .social-2:hover,
-        .social-3:hover {
-          cursor: pointer;
-        }
-      }
-    }
-  }
-}
-
-//media for footer
-@media (min-width: 1440px) {
-  footer {
-    padding: 92px 261px 86px 80px;
-
-    .footer-container {
-      .logo {
-        width: 135px;
-        height: 39px;
-        margin: 0;
-      }
-
-      .search-content {
-        margin: 37px 0 0;
-        display: flex;
-
-        .box-1,
-        .box-2,
-        .box-3,
-        .box-4 {
-          margin: 0;
-        }
-
-        .box-2 {
-          margin: 0 0 0 222px;
-        }
-
-        .box-3 {
-          margin: 0 0 0 200px;
-        }
-
-        .box-4 {
-          margin: 0 0 0 185px;
-        }
-      }
-    }
-  }
-}
