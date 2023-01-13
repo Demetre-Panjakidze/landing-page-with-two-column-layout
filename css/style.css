@@ -1022,9 +1022,9 @@ main .section_1 .section_1-container .text-content form button {
   }
   main .section_1 .section_1-container .text-content p {
     margin: 20px 0 0;
+    max-width: 440px;
     font-size: 15.5px;
     line-height: 22.5px;
-    max-width: 440px;
   }
   main .section_1 .section_1-container .text-content form {
     margin: 29px 0 0;
@@ -1078,7 +1078,7 @@ main .section_1 .section_1-container .text-content form button {
   main .section_1 .section_1-container .text-content form .input .email {
     width: 100%;
     height: 45px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 19px;
   }
   main .section_1 .section_1-container .text-content form button {

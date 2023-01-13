@@ -1,26 +1,38 @@
-// const error_message = document.querySelectorAll(".email-validate");
-// error_message.forEach((x) => {
-//   x.style.display = "none";
-// })
-
-const getStartedBtns = document.querySelectorAll('.get-started');
-const emailInputs = document.querySelectorAll('.email');
-const emailValidates = document.querySelectorAll('.email-validate');
-
-getStartedBtns.forEach(function(btn, index) {
-    btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const email = emailInputs[index].value;
-        if(email === ''){
-            emailValidates[index].innerHTML = 'Email is empty';
-        }
-        else if(!validateEmail(email)){
-            emailValidates[index].innerHTML = 'Email is not valid';
-        }
-    });
+const error_message = document.querySelectorAll(".email-validate");
+error_message.forEach((x) => {
+  x.style.display = "none";
 });
 
-function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
+const formTop = document.querySelector(".form-top");
+const formBottom = document.querySelector(".form-bottom");
+const emailTop = formTop.querySelector(".email");
+const emailBottom = formBottom.querySelector(".email");
+const emailValidateTop = formTop.querySelector(".email-validate");
+const emailValidateBottom = formBottom.querySelector(".email-validate");
+const getStartedTop = formTop.querySelector(".get-started-btn");
+const getStartedBottom = formBottom.querySelector(".get-started-btn");
+const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+//function for validate email
+function validateEmail(input) {
+    if (input.value === "") {
+      emailValidateTop.style.display = 'block';
+      emailValidateBottom.style.display = 'block';
+      getStartedTop.disabled = true;
+      getStartedBottom.disabled = true;
+    } else if (input.value.match(emailRegex)) {
+      emailValidateTop.style.display = 'none';
+      emailValidateBottom.style.display = 'none';
+      getStartedTop.disabled = false;
+      getStartedBottom.disabled = false;
+    }else{
+      emailValidateTop.style.display = 'block';
+      emailValidateBottom.style.display = 'block';
+      getStartedTop.disabled = true;
+      getStartedBottom.disabled = true;
+    }
+  }
+
+//event listeners
+emailTop.addEventListener("input", () => validateEmail(emailTop));
+emailBottom.addEventListener("input", () => validateEmail(emailBottom));
