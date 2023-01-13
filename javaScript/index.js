@@ -13,7 +13,6 @@ const getStartedTop = formTop.querySelector(".get-started-btn");
 const getStartedBottom = formBottom.querySelector(".get-started-btn");
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-//function for validate email
 function validateEmail(input) {
     if (input.value === "") {
       emailValidateTop.style.display = 'block';
@@ -33,6 +32,5 @@ function validateEmail(input) {
     }
   }
 
-//event listeners
 emailTop.addEventListener("input", () => validateEmail(emailTop));
 emailBottom.addEventListener("input", () => validateEmail(emailBottom));
